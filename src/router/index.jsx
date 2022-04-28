@@ -52,7 +52,7 @@ import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 const route = [
   {
     path: '/',
-    module: '/page/index'
+    module: 'page/index'
   }
 ]
 
