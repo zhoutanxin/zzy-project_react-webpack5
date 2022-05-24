@@ -56,7 +56,7 @@ const webpackConfig = {
     },
     // 清除上一次的打包文件
     clean: {
-      keep: /static/, // 保留 'static' 下的静态资源
+      keep: /src\/static\//, // 保留 'static' 下的静态资源
     },
     // publicPath: '/',
   },
@@ -179,7 +179,7 @@ const webpackConfig = {
         to: './'
       },
       {
-        from: path.resolve(absolutePath, 'static'),
+        from: path.resolve(absolutePath, 'src/static'),
         to: './static'
       },
     ]),
