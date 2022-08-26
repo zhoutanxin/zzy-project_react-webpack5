@@ -8,11 +8,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development DOMAIN=domain node ./scripts/server.js",
     "start:prod": "cross-env NODE_ENV=production DOMAIN=domain node ./scripts/server.js",
-    "start:prod-s": "cross-env NODE_ENV=production DOMAIN=domain node ./scripts/server.js",
     "build": "cross-env NODE_ENV=development DOMAIN=domain node ./scripts/build.js",
-    "build-s": "cross-env NODE_ENV=development DOMAIN=domain node ./scripts/build.js",
     "build:prod": "cross-env NODE_ENV=production DOMAIN=domain node ./scripts/build.js",
-    "build:prod-s": "cross-env NODE_ENV=production DOMAIN=domain node ./scripts/build.js",
     "dll": "npx webpack --config ./config/webpack_dll.config.js"
   },
   "devDependencies": {

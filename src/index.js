@@ -12,6 +12,8 @@ JSB_init()
 
 // rem 设置
 setDomRem(8)
+const nowRem = document.querySelector('html')?.style.fontSize?.split('px')[0]
+window.localStorage.setItem('domRem', nowRem)
 
 
 

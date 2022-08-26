@@ -8,10 +8,6 @@
   <meta name="theme-color" content="#000000" />
   <link rel="icon" href="%PUBLIC_URL%/browserIcon.svg" type="image/svg">
   <title>zzy frame</title>
-  <script>
-    // 计算白屏加载时间
-    console.time();
-  </script>
 </head>
 
 <body>
@@ -19,7 +15,7 @@
   </div>
 </body>
 <script>
-  console.timeEnd();
+  console.log(performance.timing);
 </script>
 
 </html>
