@@ -13,7 +13,13 @@ const webpackMerge = merge(webpackBase, {
     // 不输出路径信息
     pathinfo: false
   },
-  cache: false,
+  cache: {
+    type: 'filesystem',
+    memoryCacheUnaffected: true,
+  },
+  experiments:{
+    cacheUnaffected: true,
+  },
   // eval 提高编译效率
   // devtool: 'cheap-module-eval-source-map'
   // 完整展示错误信息
