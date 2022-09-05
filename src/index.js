@@ -5,6 +5,11 @@ import App from './App.js'
 
 import './index.css'
 
+// 启动热重载
+if (module.hot) {
+  module.hot.accept();
+}
+
 // JSbridge 初始化
 JSB_init()
 
